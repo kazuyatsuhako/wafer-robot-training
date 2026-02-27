@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>02. ロボット機構（θ/R/Z）</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-title">Wafer Transfer Robot</div>
+        <div class="brand-sub">新人 超基礎テキスト v1</div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item" href="../index.html">← 表紙へ</a>
+        <a class="nav-item" href="./00_overview.html">00. 世界観</a>
+        <a class="nav-item" href="./01_system_map.html">01. 全体構成</a>
+        <a class="nav-item" href="./02_robot_mechanics.html">02. ロボット機構</a>
+        <a class="nav-item" href="./03_vacuum_system.html">03. 真空</a>
+        <a class="nav-item" href="./04_sensors_io.html">04. センサ/IO</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="hint">今日のミッション</div>
+        <div class="small">θ/R/Zが「何を動かす軸か」を説明できるようになる。</div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>02. ロボット機構（θ / R / Z）</h1>
+        <p class="lead">搬送ロボは“極座標”。1軸のズレが、世界のズレになる。</p>
+      </header>
+
+      <section class="card">
+        <h2>まず結論</h2>
+        <ul>
+          <li><strong>θ軸</strong>：回転（向きを変える）</li>
+          <li><strong>R軸</strong>：伸縮（距離を変える）</li>
+          <li><strong>Z軸</strong>：上下（高さを変える）</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>新人が最初に壊しがちなポイント</h2>
+        <div class="alert">
+          <strong>NG：</strong>原点未取得で動作／手でアームを押す／Teachを“なんとなく”触る
+        </div>
+        <ul>
+          <li>原点ズレ → 位置信頼が崩壊 → 接触/衝突に見える事故へ</li>
+          <li>“動くつもりの方向”と“実際の機構の逃げ”が違う</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>現場での観察チェック（まずここから）</h2>
+        <ul>
+          <li>異音：ベルト/減速機/軸受の兆候</li>
+          <li>引っかかり：機構干渉・ケーブル噛み込み</li>
+          <li>位置ズレ：原点・カップリング緩み・エンコーダ周り</li>
+        </ul>
+      </section>
+
+      <section class="card">
+        <h2>今日の理解チェック（3問）</h2>
+        <ol>
+          <li>θ/R/Zを自分の言葉で説明してみる</li>
+          <li>「原点未取得が危険」な理由を1行で</li>
+          <li>位置ズレの原因を3つ挙げる（例：ベルト滑り…）</li>
+        </ol>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

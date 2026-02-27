@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Wafer Transfer Robot Training Book</title>
+  <link rel="stylesheet" href="./assets/style.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="brand-title">Wafer Transfer Robot</div>
+        <div class="brand-sub">新人 超基礎テキスト v1</div>
+      </div>
+
+      <nav class="nav">
+        <a class="nav-item" href="./chapters/00_overview.html">00. 世界観（EFEM/FOUP）</a>
+        <a class="nav-item" href="./chapters/01_system_map.html">01. 全体構成（箱の中身）</a>
+        <a class="nav-item" href="./chapters/02_robot_mechanics.html">02. ロボット機構（θ/R/Z）</a>
+        <a class="nav-item" href="./chapters/03_vacuum_system.html">03. 真空（吸着の命綱）</a>
+        <a class="nav-item" href="./chapters/04_sensors_io.html">04. センサ/IO（現場の神）</a>
+      </nav>
+
+      <div class="sidebar-footer">
+        <div class="hint">✅ 使い方</div>
+        <div class="small">
+          chapterを開いて読む → 学習後に learning-log に記録 → GitHubへpush
+        </div>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="header">
+        <h1>Wafer Transfer Robot Training Book</h1>
+        <p class="lead">「壊さず・汚さず・ズラさず」を守るための、現場仕様の基礎。</p>
+      </header>
+
+      <section class="card">
+        <h2>今日のゴール（最初の1週間）</h2>
+        <ul>
+          <li>装置の“箱の中身”を言葉で説明できる</li>
+          <li>ロボットの軸（θ/R/Z）と危険ポイントが分かる</li>
+          <li>真空系のトラブルが「空気漏れ」から疑える</li>
+          <li>センサLEDを見るクセがつく</li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <a class="tile" href="./chapters/00_overview.html">
+          <div class="tile-title">00. 世界観</div>
+          <div class="tile-sub">EFEM / FOUP / Load Port</div>
+        </a>
+        <a class="tile" href="./chapters/02_robot_mechanics.html">
+          <div class="tile-title">02. ロボット機構</div>
+          <div class="tile-sub">極座標・原点・Teach</div>
+        </a>
+        <a class="tile" href="./chapters/03_vacuum_system.html">
+          <div class="tile-title">03. 真空</div>
+          <div class="tile-sub">ポンプ・電磁弁・パッド</div>
+        </a>
+        <a class="tile" href="./chapters/04_sensors_io.html">
+          <div class="tile-title">04. センサ/IO</div>
+          <div class="tile-sub">フォト・近接・真空</div>
+        </a>
+      </section>
+
+      <section class="card">
+        <h2>注意（新人の事故防止）</h2>
+        <div class="alert">
+          <strong>原則：</strong>原因未確認のResetは禁止。手でアームを押さない。Teachを勝手に触らない。
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
