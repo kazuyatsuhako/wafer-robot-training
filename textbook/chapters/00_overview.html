@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Day1｜ウエハはどこを旅しているのか</title>
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+
+<body>
+<div class="layout">
+
+<!-- ===== Sidebar ===== -->
+<aside class="sidebar">
+<div class="brand">
+<div class="brand-title">Wafer Transfer Robot</div>
+<div class="brand-sub">Day1 基礎講義</div>
+</div>
+
+<nav class="nav">
+<a class="nav-item" href="../index.html">← 表紙へ</a>
+<a class="nav-item" href="00_overview.html">Day1 世界観</a>
+<a class="nav-item" href="01_system_map.html">装置全体構成</a>
+<a class="nav-item" href="02_robot_mechanics.html">ロボット機構</a>
+<a class="nav-item" href="03_vacuum_system.html">真空システム</a>
+<a class="nav-item" href="04_sensors_io.html">センサ / IO</a>
+</nav>
+
+<div class="sidebar-footer">
+<div class="hint">Day1 Goal</div>
+<div class="small">
+EFEMとウエハ搬送ルートを説明できる
+</div>
+</div>
+</aside>
+
+<!-- ===== Main ===== -->
+<main class="main">
+
+<header class="header">
+<h1>Day1｜ウエハはどこを旅しているのか</h1>
+<p class="lead">
+ロボットを見る前に、まず「世界」を理解する。
+</p>
+</header>
+
+<section class="card">
+<h2>今日のゴール</h2>
+<ul>
+<li>EFEMとは何か説明できる</li>
+<li>FOUPの役割を理解する</li>
+<li>ウエハ搬送ルートを頭で描ける</li>
+<li>装置が停止する理由を理解する</li>
+</ul>
+</section>
+
+<section class="card">
+<h2>半導体装置の世界観</h2>
+<p>
+半導体工場では、ウエハは人間に一切触れず移動する。
+ホコリ1粒でも製品不良になるため、
+完全な無人物流システムが構築されている。
+</p>
+
+<h3>ウエハの旅路</h3>
+
+<pre>
+FOUP
+ ↓
+Load Port
+ ↓
+EFEM（搬送ロボ）
+ ↓
+Process Chamber
+ ↓
+EFEM
+ ↓
+FOUP
+</pre>
+
+</section>
+
+<section class="card">
+<h2>FOUPとは</h2>
+
+<p>
+正式名称：Front Opening Unified Pod
+</p>
+
+<ul>
+<li>ウエハ専用密閉ケース</li>
+<li>最大25枚収納</li>
+<li>クリーン環境維持</li>
+<li>ID管理される</li>
+</ul>
+
+<div class="alert">
+ロボットはウエハを運ぶのではない。<br>
+FOUP間の物流を成立させている。
+</div>
+
+</section>
+
+<section class="card">
+<h2>Load Port</h2>
+
+<p>
+FOUPと装置を接続するドッキング装置。
+</p>
+
+<ul>
+<li>FOUP固定</li>
+<li>ID読み取り</li>
+<li>扉開閉</li>
+<li>密閉接続</li>
+</ul>
+
+<p>
+多くの「ロボット異常」は、
+実はLoad Port側問題である。
+</p>
+
+</section>
+
+<section class="card">
+<h2>EFEM（今日の主役）</h2>
+
+<p>
+Equipment Front End Module
+</p>
+
+<ul>
+<li>搬送ロボット</li>
+<li>アライナ</li>
+<li>センサ群</li>
+<li>ミニクリーン空間</li>
+</ul>
+
+<div class="alert">
+EFEM = ウエハ物流センター
+</div>
+
+</section>
+
+<section class="card">
+<h2>Process Chamber</h2>
+
+<ul>
+<li>成膜</li>
+<li>エッチング</li>
+<li>洗浄</li>
+<li>検査</li>
+</ul>
+
+<p>
+チャンバー停止は工場損失に直結するため、
+搬送ロボットは極めて高い信頼性を要求される。
+</p>
+
+</section>
+
+<section class="card">
+<h2>なぜ装置はすぐ止まるのか</h2>
+
+<pre>
+疑わしい → 停止
+安全確認 → 再開
+</pre>
+
+<p>
+優先順位：
+</p>
+
+<ul>
+<li>ウエハ</li>
+<li>装置</li>
+<li>作業時間</li>
+</ul>
+
+</section>
+
+<section class="card">
+<h2>Day1 核心理解</h2>
+
+<div class="alert">
+EFEM内の搬送ロボットは、<br>
+FOUPとProcess Chamber間の無人物流を成立させる装置である。
+</div>
+
+</section>
+
+<section class="card">
+<h2>理解チェック</h2>
+
+<ol>
+<li>EFEMとは何か？</li>
+<li>FOUPの役割は？</li>
+<li>なぜ装置はすぐ停止する？</li>
+</ol>
+
+</section>
+
+<section class="card">
+<h2>learning-log 記録指示</h2>
+
+<pre>
+learning-log/day01_YYYYMMDD.md
+
+・EFEMを自分の言葉で説明
+・今日の例え
+・分からない点3つ
+・今日の一文
+</pre>
+
+</section>
+
+</main>
+</div>
+</body>
+</html>
